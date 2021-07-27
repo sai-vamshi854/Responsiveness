@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box Responsive</title>
+    <style>
+        *{
+        
+            box-sizing: border-box;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        body{
+            margin: 0px;
+        }
+        .header{
+            text-align: center;
+            background-color: aqua;
+            padding: 60px;
+        }
+        .navbar{
+            display: flex;
+            background-color: black;
+           
+            
+        }
+        .navbar a{
+            text-decoration: none;
+            padding: 10px;
+            color: white;
+            font-size: 25px;
+        }
+        a:hover{
+           
+            color: black;
+            background-color: #ddd;
+        }
+        .row{
+            display: flex;
+          flex-wrap: wrap;
+        }
+        .side{
+            flex: 30%;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+        .main{
+           
+            flex: 70%;
+            background-color: #f1f1f1;
+        }
+        .fakeimg{
+            margin: 10px;
+            background-color: #aaa;
+            padding: 20px;
+            width: auto;
+
+        }
+        .footer{
+            background-color: black;
+            padding: 60px;
+            color: white;
+            text-align: center;
+            font-size: 25px;
+        }
+        @media screen and (max-width:700px){
+            .row,.navbar{
+                flex-direction: column;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <!--Header-->
+    <div class="header">
+<h1>My Website</h1>
+<p>with flexible layout</p>
+    </div>
+    <div class="navbar">
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+    </div>
+    <div class="row">
+        <div class="side">
+            <h2>About me</h2>
+            <h5>photo of me</h5>
+            <div class="fakeimg">Image</div>
+            <p> Some text about ne in culpa qui offica deserunt ...</p>
+            <h3>More text</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia omnis quo incidunt n</p>
+            <div class="fakeimg">Image</div>
+            <div class="fakeimg">Image</div>
+            <div class="fakeimg">Image</div>
+        </div>
+        <br>
+        <div class="main">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description DEC 7, 2017</h5>
+            <div class="fakeimg">Image</div>
+            <h3>Some Text</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, odit!</p>
+            <br>
+            <h5>Title description DEC 7, 2017</h5>
+            <div class="fakeimg">Image</div>
+            <h3>Some Text</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, odit!</p>
+            <br>
+            
+            
+
+        </div>
+    </div>
+    <div class="footer">
+        All Rights are Reserved
+    </div>
+    
+</body>
+</html>
